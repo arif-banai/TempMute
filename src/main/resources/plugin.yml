@@ -1,0 +1,32 @@
+name: TempMute
+version: ${project.version}
+main: com.theboxmc.tempmute.TempMute
+api-version: 1.15
+authors: [smeef]
+description: A tempmute plugin is a plugin that allows server owners to mute players for a amount of time.
+database: true
+depend: [IDLogger]
+commands:
+  tempmute:
+    description: "Temporarily mute a player for a defined amount of time in seconds"
+    permission: tempmute.commands.mute
+    usage: "/tempmute <player> <time>[d,h,m,s]"
+  unmute:
+    description: "Unmute a player"
+    permission: tempmute.commands.unmute
+    usage: "/unmute <player>"
+permissions:
+  tempmute.commands.*:
+    description: Access to all TempMute commands
+    children:
+      tempmute.commands.mute: true
+      tempmute.commands.unmute: true
+  tempmute.commands.mute:
+    description: Permission to use /tempmute
+    default: op
+  tempmute.commands.unmute:
+    description: Permission to use /unmute
+    default: op
+  tempmute.nomute:
+    description: Permission to make the holder unmuteable
+    default: op
