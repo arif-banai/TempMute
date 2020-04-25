@@ -1,6 +1,6 @@
 package com.theboxmc.tempmute;
 
-import com.theboxmc.tempmute.commands.Tempmute;
+import com.theboxmc.tempmute.commands.TempMuteCMD;
 import com.theboxmc.tempmute.commands.Unmute;
 import com.theboxmc.tempmute.exceptions.PlayerNotFoundException;
 import com.theboxmc.tempmute.exceptions.PlayerNotMutedException;
@@ -140,7 +140,7 @@ public final class TempMute extends JavaPlugin implements Listener {
     }
 
     private void setupCommands() {
-        getCommand("tempmute").setExecutor(new Tempmute(this));
+        getCommand("tempmute").setExecutor(new TempMuteCMD(this));
         getCommand("unmute").setExecutor(new Unmute(this));
     }
 }

@@ -1,6 +1,6 @@
 package com.theboxmc.tempmute.interfaces;
 
 public interface TempMuteCallback<T> {
-    public void onSuccess(T result);
-    public void onFailure(Throwable cause);
+    void onSuccess(T result);
+    void onFailure(Throwable cause);
 }

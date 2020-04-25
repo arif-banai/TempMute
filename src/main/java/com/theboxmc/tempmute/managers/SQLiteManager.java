@@ -1,11 +1,10 @@
 package com.theboxmc.tempmute.managers;
 
-import com.theboxmc.tempmute.database.Database;
-import com.theboxmc.tempmute.database.SQLite;
+import me.arifbanai.bukkitSQL.Database;
+import me.arifbanai.bukkitSQL.sqlite.SQLite;
 import com.theboxmc.tempmute.exceptions.PlayerNotFoundException;
 import com.theboxmc.tempmute.interfaces.TempMuteCallback;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.PreparedStatement;
@@ -13,8 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
-
-//TODO Make async using BukkitScheduler and callbacks
 
 public class SQLiteManager {
 

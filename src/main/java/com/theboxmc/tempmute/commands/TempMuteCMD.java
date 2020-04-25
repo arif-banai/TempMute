@@ -16,11 +16,11 @@ import java.sql.SQLException;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-public class Tempmute implements CommandExecutor {
+public class TempMuteCMD implements CommandExecutor {
 
     private TempMute plugin;
 
-    public Tempmute(final TempMute plugin) {
+    public TempMuteCMD(final TempMute plugin) {
         this.plugin = plugin;
     }
 

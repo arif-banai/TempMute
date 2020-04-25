@@ -2,8 +2,6 @@ package com.theboxmc.tempmute.managers;
 
 import com.theboxmc.tempmute.TempMute;
 import com.theboxmc.tempmute.exceptions.PlayerNotMutedException;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
 import java.util.HashMap;
